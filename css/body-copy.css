@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    color: #33FF33; /* Terminal Green */
+    background-color: #000000; /* Terminal Background */
+}
+
+body {
+    background-color: #000000;
+    color: #33FF33;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    overflow-x: hidden;
+    font-family: 'JetBrains Mono', monospace;
+    max-width: 100vw;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #111111;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #33FF33;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #00FF00; /* Terminal Green */
+    transform: scale(1.1);
+}
+
+/* Body Copy Section */
+.body-copy {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px; /* Widen the content area */
+    overflow: hidden;
+}
+
+.body-copy h1 {
+    font-size: 2.5em;
+    color: #33FF33;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.body-copy p {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+/* Paragraph Styles */
+.paragraph-style {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    width: 100%;
+}
+
+/* Increase size of paragraph header text */
+.paragraph-style h2 {
+    font-size: 2em;
+    color: #33FF33;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Cursor Animation */
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: #33FF33;
+    margin-left: 5px;
+    animation: blink 1s step-end infinite;
+}
+
+/* Cursor Blinking Effect */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Small Text */
+.small-text {
+    background-color: #222222;
+    border: 1px solid #444444;
+}
+
+.small-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #B0B0B0;
+}
+
+/* Medium Text */
+.medium-text {
+    background-color: #333333;
+    border: 1px solid #555555;
+}
+
+.medium-text p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #33FF33;
+}
+
+/* Large Text */
+.large-text {
+    background-color: #444444;
+    border: 1px solid #666666;
+}
+
+.large-text p {
+    font-size: 1.5em;
+    line-height: 2;
+    color: #FFFFFF;
+}
+
+/* Hover Effect on Paragraph Styles */
+.paragraph-style:hover {
+    background-color: #555555;
+    border: 1px solid #00FF00;
+}

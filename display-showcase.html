@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Showcase - Hacking Concepts</title>
+    <link rel="stylesheet" href="css/display-showcase.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="character-display.html">Character Display</a>
+        <a href="display-showcase.html">Display Showcase</a>
+        <a href="body-copy.html">Body Copy</a>
+        <a href="experiments.html">Experiments</a>
+    </nav>
+
+    <!-- Display Showcase Section -->
+    <div class="display-showcase">
+        <h2>Display Showcase: Hacking and Exploit Concepts</h2>
+        <div class="showcase-cards">
+            <!-- Buffer Overflow -->
+            <div class="card-content">
+                <h3>Buffer Overflow Vulnerability</h3>
+                <p>A classic vulnerability where an attacker can exploit a program by overfilling a buffer, leading to code execution and data leakage.<br>Exploit Example: <code>python -c 'import sys; sys.exit(0)'</code></p>
+            </div>
+
+            <!-- Cross-Site Scripting (XSS) -->
+            <div class="card-content">
+                <h3>Cross-Site Scripting (XSS)</h3>
+                <p>Involves injecting malicious scripts into webpages viewed by users. These scripts can execute unwanted actions, steal cookies, or manipulate page content.<br>Exploit Example: <code><script>alert('XSS');</script></code></p>
+            </div>
+
+            <!-- SQL Injection -->
+            <div class="card-content">
+                <h3>SQL Injection</h3>
+                <p>SQL injection occurs when an attacker inputs SQL code into a form field, which the server executes, potentially giving access to sensitive data.<br>Exploit Example: <code>' OR '1'='1' --</code></p>
+            </div>
+
+            <!-- Command Injection -->
+            <div class="card-content">
+                <h3>Command Injection</h3>
+                <p>Occurs when an attacker injects system commands into a vulnerable application, executing arbitrary commands on the server.<br>Exploit Example: <code>; ls -la</code></p>
+            </div>
+
+            <!-- Cross-Site Request Forgery (CSRF) -->
+            <div class="card-content">
+                <h3>Cross-Site Request Forgery (CSRF)</h3>
+                <p>Involves tricking the victim into performing actions on a site where they are authenticated, potentially leading to account hijacking.<br>Exploit Example: <code><img src="http://victim.com/reset-password?newpassword=attacker" /></code></p>
+            </div>
+
+            <!-- Race Condition -->
+            <div class="card-content">
+                <h3>Race Condition</h3>
+                <p>Occurs when an attacker manipulates a system's timing, allowing them to exploit inconsistencies between actions.<br>Exploit Example: <code>race-condition.php</code></p>
+            </div>
+
+            <!-- Privilege Escalation -->
+            <div class="card-content">
+                <h3>Privilege Escalation</h3>
+                <p>Attackers exploit vulnerabilities to gain higher levels of access than intended, such as moving from a user account to admin.<br>Exploit Example: <code>sudo -u root id</code></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
